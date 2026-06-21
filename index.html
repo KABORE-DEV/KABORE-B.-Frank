@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio - Étudiant en Génie Logiciel" />
+    <title>Portfolio | Génie Logiciel</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="alternate icon" href="assets/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#accueil" class="nav__logo" data-animate="fade-in">
+          <span class="nav__logo-bracket">&lt;</span>
+          <span class="nav__logo-text">Portfolio</span>
+          <span class="nav__logo-bracket">/&gt;</span>
+        </a>
+
+        <ul class="nav__menu" id="nav-menu">
+          <!-- Rempli dynamiquement par main.js -->
+        </ul>
+
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-label="Ouvrir le menu"
+          aria-expanded="false">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero section" id="accueil">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__grid"></div>
+          <div class="hero__glow hero__glow--1"></div>
+          <div class="hero__glow hero__glow--2"></div>
+        </div>
+
+        <div class="container hero__content">
+          <div class="hero__text">
+            <p class="hero__greeting" data-animate="slide-up">
+              Bonjour, je suis
+            </p>
+            <h1 class="hero__name" data-animate="slide-up" data-delay="0.1">
+              <span id="hero-firstname">Frank</span>
+              <span class="hero__name-accent" id="hero-lastname">KABORE</span>
+            </h1>
+            <p
+              class="hero__title"
+              data-animate="slide-up"
+              data-delay="0.2"
+              id="hero-title">
+              Étudiant en Génie Logiciel
+            </p>
+            <p
+              class="hero__subtitle"
+              data-animate="slide-up"
+              data-delay="0.3"
+              id="hero-subtitle">
+              2ème année · Passionné par le développement web & mobile
+            </p>
+
+            <div class="hero__actions" data-animate="slide-up" data-delay="0.4">
+              <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+              <a href="#contact" class="btn btn--outline">Me contacter</a>
+            </div>
+
+            <div
+              class="hero__social"
+              data-animate="slide-up"
+              data-delay="0.5"
+              id="hero-social">
+              <!-- Rempli dynamiquement -->
+            </div>
+          </div>
+
+          <div class="hero__visual" data-animate="fade-in" data-delay="0.3">
+            <div class="hero__avatar" id="hero-avatar">
+              <div class="hero__avatar-placeholder">
+                <span class="hero__avatar-initials" id="hero-initials">FD</span>
+              </div>
+            </div>
+            <div
+              class="hero__code-card"
+              data-animate="slide-left"
+              data-delay="0.6">
+              <div class="code-card">
+                <div class="code-card__header">
+                  <span class="code-card__dot code-card__dot--red"></span>
+                  <span class="code-card__dot code-card__dot--yellow"></span>
+                  <span class="code-card__dot code-card__dot--green"></span>
+                  <span class="code-card__filename">developer.js</span>
+                </div>
+                <pre
+                  class="code-card__body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string" id="code-name">"Frank"</span>,
+  <span class="code-prop">role</span>: <span class="code-string" id="code-role">"Génie Logiciel"</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Créer des apps"</span>,
+};</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="#apropos"
+          class="hero__scroll"
+          aria-label="Défiler vers le bas"
+          data-animate="fade-in"
+          data-delay="0.8">
+          <span class="hero__scroll-text">Scroll</span>
+          <span class="hero__scroll-line"></span>
+        </a>
+      </section>
+
+      <!-- ===== À PROPOS ===== -->
+      <section class="about section" id="apropos">
+        <div class="container">
+          <div class="section__header" data-animate="slide-up">
+            <span class="section__tag">01. À propos</span>
+            <h2 class="section__title">Qui suis-je ?</h2>
+          </div>
+
+          <div class="about__grid">
+            <div
+              class="about__photo-wrapper"
+              data-animate="slide-up"
+              data-delay="0.1">
+              <div class="about__photo" id="about-photo">
+                <div
+                  class="about__photo-placeholder"
+                  id="about-photo-placeholder">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    aria-hidden="true">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="about__text" data-animate="slide-up" data-delay="0.15">
+              <p class="about__bio" id="about-bio"></p>
+              <ul class="about__info" id="about-info">
+                <!-- Rempli dynamiquement -->
+              </ul>
+              <a
+                href="assets/CV_Kabore_Frank.pdf"
+                class="btn btn--outline"
+                id="cv-download"
+                download>
+                Télécharger mon CV
+              </a>
+            </div>
+
+            <div class="about__stats" data-animate="slide-up" data-delay="0.2">
+              <div class="stat-card">
+                <span class="stat-card__number" data-count="2">0</span>
+                <span class="stat-card__label">Année d'études</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number" data-count="3">0</span>
+                <span class="stat-card__label">Projets réalisés</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-card__number" data-count="8">0</span>
+                <span class="stat-card__label">Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== COMPÉTENCES ===== -->
+      <section class="skills section" id="competences">
+        <div class="container">
+          <div class="section__header" data-animate="slide-up">
+            <span class="section__tag">02. Compétences</span>
+            <h2 class="section__title">Ce que j'utilise</h2>
+          </div>
+
+          <p class="skills__intro" data-animate="slide-up" data-delay="0.05">
+            Pas de pourcentages — juste mon expérience réelle avec chaque
+            technologie.
+          </p>
+
+          <div class="skills__legend" data-animate="slide-up" data-delay="0.08">
+            <div class="skills__legend-item">
+              <span
+                class="skills__legend-dot skills__legend-dot--practiced"></span>
+              Utilisé en projet
+            </div>
+            <div class="skills__legend-item">
+              <span
+                class="skills__legend-dot skills__legend-dot--familiar"></span>
+              À l'aise
+            </div>
+            <div class="skills__legend-item">
+              <span
+                class="skills__legend-dot skills__legend-dot--learning"></span>
+              En cours
+            </div>
+          </div>
+
+          <div class="skills__filters" data-animate="slide-up" data-delay="0.1">
+            <button
+              class="skills__filter skills__filter--active"
+              data-filter="all">
+              Tout
+            </button>
+            <button class="skills__filter" data-filter="front">
+              Front-end
+            </button>
+            <button class="skills__filter" data-filter="back">Back-end</button>
+            <button class="skills__filter" data-filter="tools">Outils</button>
+          </div>
+
+          <div class="skills__grid" id="skills-grid">
+            <!-- Rempli dynamiquement -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PROJETS ===== -->
+      <section class="projects section" id="projets">
+        <div class="container">
+          <div class="section__header" data-animate="slide-up">
+            <span class="section__tag">03. Projets</span>
+            <h2 class="section__title">Mes réalisations</h2>
+          </div>
+
+          <div class="projects__grid" id="projects-grid">
+            <!-- Rempli dynamiquement -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== PARCOURS ===== -->
+      <section class="timeline section" id="parcours">
+        <div class="container">
+          <div class="section__header" data-animate="slide-up">
+            <span class="section__tag">04. Parcours</span>
+            <h2 class="section__title">Formation & expérience</h2>
+          </div>
+
+          <div class="timeline__wrapper">
+            <div class="timeline__column">
+              <h3 class="timeline__column-title" data-animate="slide-up">
+                Formation
+              </h3>
+              <div class="timeline__list" id="education-list">
+                <!-- Rempli dynamiquement -->
+              </div>
+            </div>
+
+            <div class="timeline__column">
+              <h3 class="timeline__column-title" data-animate="slide-up">
+                Expérience
+              </h3>
+              <div class="timeline__list" id="experience-list">
+                <!-- Rempli dynamiquement -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="section__header" data-animate="slide-up">
+            <span class="section__tag">05. Contact</span>
+            <h2 class="section__title">Travaillons ensemble</h2>
+          </div>
+
+          <div class="contact__grid">
+            <div class="contact__info" data-animate="slide-up" data-delay="0.1">
+              <p class="contact__text">
+                Vous avez un projet, une question ou vous voulez simplement
+                discuter ? N'hésitez pas à me contacter, je vous répondrai
+                rapidement.
+              </p>
+              <div class="contact__details" id="contact-details">
+                <!-- Rempli dynamiquement -->
+              </div>
+              <div class="contact__social" id="contact-social">
+                <!-- Rempli dynamiquement -->
+              </div>
+            </div>
+
+            <form
+              class="contact__form"
+              id="contact-form"
+              data-animate="slide-up"
+              data-delay="0.2">
+              <div class="form__group">
+                <label for="name" class="form__label">Nom</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form__input"
+                  placeholder="Ton nom"
+                  required />
+              </div>
+              <div class="form__group">
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form__input"
+                  placeholder="ton@email.com"
+                  required />
+              </div>
+              <div class="form__group">
+                <label for="message" class="form__label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form__input form__textarea"
+                  rows="5"
+                  placeholder="Ton message..."
+                  required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <span>Envoyer le message</span>
+                <svg
+                  class="btn__icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2">
+                  <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <p class="footer__text">
+          Conçu & développé par <span id="footer-name">Frank</span>
+        </p>
+        <p class="footer__year" id="footer-year"></p>
+      </div>
+    </footer>
+
+    <!-- Modal détail projet -->
+    <div
+      class="modal"
+      id="project-modal"
+      aria-hidden="true"
+      role="dialog"
+      aria-labelledby="modal-title">
+      <div class="modal__overlay" id="modal-overlay"></div>
+      <div class="modal__container">
+        <button class="modal__close" id="modal-close" aria-label="Fermer">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12" />
+          </svg>
+        </button>
+
+        <div class="modal__image" id="modal-image"></div>
+
+        <div class="modal__content">
+          <h2 class="modal__title" id="modal-title"></h2>
+          <p class="modal__desc" id="modal-desc"></p>
+
+          <div class="modal__section">
+            <h3 class="modal__section-title">Ce que fait le projet</h3>
+            <ul class="modal__features" id="modal-features"></ul>
+          </div>
+
+          <div class="modal__section">
+            <h3 class="modal__section-title">Technologies utilisées</h3>
+            <div class="modal__techs" id="modal-techs"></div>
+          </div>
+
+          <div class="modal__actions" id="modal-actions"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script type="module" src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
