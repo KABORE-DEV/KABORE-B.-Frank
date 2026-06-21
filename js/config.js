@@ -151,7 +151,7 @@ const PORTFOLIO_CONFIG = {
       ],
       technologies: ["HTML", "CSS", "JavaScript"],
       image: null,
-      github: "https://github.com/KABORE-DEV/KABORE-DEV",
+      github: "https://github.com/KABORE-DEV/KABORE-B.-Frank",
       demo: null,
       featured: true,
     },
