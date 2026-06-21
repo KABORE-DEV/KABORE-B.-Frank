@@ -13,7 +13,7 @@ const PORTFOLIO_CONFIG = {
     title: "Étudiant en Génie Logiciel",
     subtitle: "2ème année · Passionné par le développement web & mobile",
     email: "kabore.dev@gmail.com",
-    phone: "+226 52 76 62 73",
+    phone: "+226 52 76 62 73 / 06 41 84 57",
     location: "Burkina Faso - Bobo Dioulasso",
     bio: `Étudiant en 2ème année de génie logiciel, je suis passionné par la création
     d'applications web et mobiles. J'aime transformer des idées en solutions concrètes
