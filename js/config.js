@@ -168,7 +168,7 @@ const PORTFOLIO_CONFIG = {
     },
     {
       degree: "Baccalauréat",
-      school: "Collège Saint Joseph MOukassa de Koudougou",
+      school: "Collège Saint Joseph Moukassa de Koudougou",
       period: "2023",
       description: "SERIE D.",
     },
